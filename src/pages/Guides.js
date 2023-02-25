@@ -6,13 +6,12 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
-import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
-import CircularProgress from '@mui/material/CircularProgress';
+import CircularProgress from "@mui/material/CircularProgress";
 import Rating from "@mui/material/Rating";
 import StarIcon from "@mui/icons-material/Star";
-import CallIcon from '@mui/icons-material/Call';
-import MailIcon from '@mui/icons-material/Mail';
+import CallIcon from "@mui/icons-material/Call";
+import MailIcon from "@mui/icons-material/Mail";
 import Typography from "@mui/material/Typography";
 import "./Guides.css";
 
@@ -102,15 +101,14 @@ function App() {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Link
-                    component="button"
-                    onClick={() => console.log("I have been clicked...")}
-                  >
-                    <Button size="small">Email<MailIcon fontSize="inherit"/></Button>
-                  </Link>
-                  <Link component="button">
-                    <Button size="small">Contact me<CallIcon fontSize="inherit" /></Button>
-                  </Link>
+                  <Button size="small">
+                    Email
+                    <MailIcon fontSize="inherit" />
+                  </Button>
+                  <Button size="small">
+                    Contact me
+                    <CallIcon fontSize="inherit" />
+                  </Button>
                 </CardActions>
                 <Box
                   sx={{
