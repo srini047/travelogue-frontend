@@ -1,0 +1,75 @@
+/* Default styles */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select[multiple] {
+  height: 100px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Media queries for tablet screens */
+
+@media screen and (max-width: 768px) {
+  form {
+    flex-direction: column;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  input,
+  select,
+  textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+  }
+}
+
+/* Media queries for mobile screens */
+
+@media screen and (max-width: 480px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  button[type="submit"] {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+}

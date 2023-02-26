@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import CircularProgress from "@mui/material/CircularProgress";
-import "./CreateGuide.css";
+import "./CreateTourist.css";
 
-function CreateGuide() {
+function CreateTourist() {
   const [isLoading, setIsLoading] = useState(false);
   const [data, setData] = useState(null);
   const [name, setName] = useState("");
@@ -90,7 +90,7 @@ function CreateGuide() {
           <option value={1}>No</option>
         </select>
 
-        <label htmlFor="bio">Biography:</label>
+        <label htmlFor="bio">Needs:</label>
         <textarea
           id="bio"
           value={bio}
@@ -126,4 +126,4 @@ function CreateGuide() {
   );
 }
 
-export default CreateGuide;
+export default CreateTourist;
