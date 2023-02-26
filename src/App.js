@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Guides from  './pages/Guides';
 import Tourists from  './pages/Tourists';
 import Details from "./pages/Details";
+import Page404 from "./pages/Page404";
 
 function App() {
   return (
@@ -12,8 +13,7 @@ function App() {
           <Route path="guides" element={<Guides />} />
           <Route path="tourists" element={<Tourists />} />
           <Route path="details" element={<Details />} />
-          {/* <Route path="title" element={<Title />} />
-          <Route path="test" element={<Test />} /> */}
+          <Route path="*" element={<Page404 />} />
         </Routes>
     </BrowserRouter>
 
