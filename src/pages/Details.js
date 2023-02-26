@@ -58,6 +58,11 @@ function Details() {
         >
           <SubmitButton onSubmit={handleSubmit} />
         </form>
+        
+        <br />
+        <br />
+        <br />
+        
         {isLoading && (
           <p>
             Loading...
