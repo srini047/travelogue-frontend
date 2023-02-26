@@ -46,7 +46,7 @@ function Details() {
       <Navbar />
       <div className="container">
         <h1>Location details generator</h1>
-        <p>Get the knowledge of th place that you will be visiting using the power of AI..</p>
+        <p>Get the knowledge of the place that you will be visiting using the power of AI..</p>
         <h3>Thanks to Cohere!!!</h3>
         <br />
         <TextField fullWidth label="Enter dream location" placeholder="Bangalore, Pune, Los Angeles..." id="fullWidth" onChange={handleChange} />
