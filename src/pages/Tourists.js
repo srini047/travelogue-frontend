@@ -13,12 +13,12 @@ import StarIcon from "@mui/icons-material/Star";
 import CallIcon from "@mui/icons-material/Call";
 import MailIcon from "@mui/icons-material/Mail";
 import Typography from "@mui/material/Typography";
-import "./Guides.css";
+import "./Tourists.css";
 
 function SubmitButton({ onSubmit }) {
   return (
     <button className="submit-button" onClick={onSubmit}>
-      Click to view available guides
+      Click to view available tourists
     </button>
   );
 }
@@ -36,7 +36,7 @@ const labels = {
   5: "Best ++",
 };
 
-function Guides() {
+function Tourists() {
   const [isLoading, setIsLoading] = useState(false);
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
@@ -46,7 +46,7 @@ function Guides() {
     setError(null);
 
     try {
-      const response = await fetch(`http://localhost:4000/guides`);
+      const response = await fetch(`http://localhost:4000/tourists`);
       const data = await response.json();
       setData(data);
     } catch (error) {
@@ -59,9 +59,9 @@ function Guides() {
     <>
       <Navbar />
       <div className="container">
-        <h1>Tour Guides Available</h1>
+        <h1>Tourists onboard</h1>
         <p>
-          Shows the list of available tour guides with their contact details:
+          Shows the list of available tourists with their contact details:
         </p>
         <form
           onSubmit={(event) => {
@@ -97,7 +97,7 @@ function Guides() {
                     {item.name}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    {item.biography}
+                    {item.needs}
                   </Typography>
                 </CardContent>
                 <CardActions>
@@ -137,4 +137,4 @@ function Guides() {
   );
 }
 
-export default Guides;
+export default Tourists;
