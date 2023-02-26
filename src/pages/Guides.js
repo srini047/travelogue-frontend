@@ -55,6 +55,7 @@ function Guides() {
 
     setIsLoading(false);
   }
+  
   return (
     <>
       <Navbar />
@@ -70,7 +71,6 @@ function Guides() {
             setData(null);
           }}
         >
-          {/* Form elements go here */}
           <SubmitButton onSubmit={handleSubmit} />
         </form>
         <br />
